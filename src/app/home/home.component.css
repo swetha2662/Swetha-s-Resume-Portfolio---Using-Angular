@@ -1,7 +1,7 @@
 
 div{
     display:grid;
-/*     overflow: hidden; */
+    overflow: hidden;
 }
 
 div:first-of-type{
