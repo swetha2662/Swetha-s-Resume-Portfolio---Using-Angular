@@ -1,0 +1,55 @@
+:host {
+    display: block;
+    color: white;
+    padding: 2rem 2rem;
+}
+
+ul {
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0%;
+}
+
+.social-media {
+    font-size: 2rem;
+    display: flex;
+    align-items:normal;
+    justify-content: center;
+}
+
+.social-media li {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:safe;
+    border-radius: 50%;  
+}
+
+.icon-color{
+    color: #cdf3f3;
+}
+
+:host.pc .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+:host.pc h1 {
+    grid-column: 1/3;
+}
+
+:host.pc .social-media,
+:host.pc .contact-info {
+    width: 200px;
+    margin: 0 auto;
+}
+
+:host.pc .social-media {
+    cursor: pointer;
+}
+
+:host.pc .social-media li:hover {
+    background-color: rgba(49, 42, 107, 0.3);
+}

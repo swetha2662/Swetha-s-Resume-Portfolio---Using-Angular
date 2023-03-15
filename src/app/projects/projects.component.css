@@ -1,0 +1,39 @@
+:root {
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%);
+  }
+  
+  body {
+    background: #111;
+  }
+  
+  .row{
+    margin-top: 4rem;
+  }
+  .card {
+    background: #222;
+    border: 1px solid #fdfafb;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+  }
+  
+  .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient);
+    border: 5px solid rgb(172, 218, 230);
+    -webkit-text-fill-color: rgb(172, 218, 230);
+    border-image-source:  var(--gradient); 
+    text-decoration: none;
+    transition: all .4s ease;
+    
+  }
+  
+  .btn:hover, .btn:focus {
+    background: var(--gradient);
+    -webkit-text-fill-color: #000000;
+    border: 5px solid #fff; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: none;
+    background-color: aliceblue;
+  }
