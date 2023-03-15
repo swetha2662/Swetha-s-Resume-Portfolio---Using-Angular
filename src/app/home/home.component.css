@@ -3,7 +3,6 @@ div{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    margin-left: 2rem;
 }
 
 div:first-of-type{
