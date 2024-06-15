@@ -52,12 +52,13 @@ body {
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
   body {
-    padding: 1rem; /* Adjust padding for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
   }
 
   .row {
-    flex-direction: row; /* Stack cards vertically on smaller screens */
+    flex-direction: column; /* Stack cards vertically on smaller screens */
     align-items: center; /* Center align items */
+    align-content: center;
   }
 
   .card {
