@@ -53,29 +53,33 @@ body {
 @media (max-width: 768px) {
   body {
     padding: 2rem; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-direction: column;
     align-items: center; /* Center align items */
     align-content: center;
   }
 
   .row, .c1 {
-   /* flex-direction: column;  Stack cards vertically on smaller screens */
+    display: flex;
+    flex-direction: column; /*Stack cards vertically on smaller screens */
     align-items: center; /* Center align items */
     align-content: center;
     gap: 2rem; 
+    
     padding: 20px;
   }
 
   .card {
-    width: 150px; /* Adjust width for smaller screens */
-    height: 150px; /* Adjust height for smaller screens */
+    width: 160px; /* Adjust width for smaller screens */
+    height: 160px; /* Adjust height for smaller screens */
     border-radius: 50%; /* Keep circular shape */
     padding: 1rem; /* Adjust padding */
     margin-bottom: 1rem; /* Space between cards */
   }
 
   .card-img {
-    width: 50px; /* Adjust image size for smaller screens */
-    height: 50px;
+    width: 60px; /* Adjust image size for smaller screens */
+    height: 60px;
   }
 
   .card-text {
