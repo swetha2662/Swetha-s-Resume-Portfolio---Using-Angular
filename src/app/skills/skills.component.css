@@ -61,6 +61,7 @@ body {
     flex-direction: column; /* Stack cards vertically on smaller screens */
     align-items: center; /* Center align items */
     align-content: center;
+    padding: 15px;
   }
 
   .card {
