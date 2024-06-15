@@ -116,7 +116,10 @@
         height: auto;
     }
 
-    .name span:nth-of-type(2),
+    .name span:nth-of-type(2) {
+        font-size: 2rem;
+        color: var(--blue);
+    }
     .name span:nth-of-type(3) {
         font-size: 1.2rem;
     }
