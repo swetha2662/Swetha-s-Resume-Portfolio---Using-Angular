@@ -30,6 +30,7 @@
 .name span:nth-of-type(1) span {
     font-size: 2rem;
     color: var(--blue);
+    animation: slide-from-left 6s infinite;
 }
 
 .name span:nth-of-type(2){
@@ -107,41 +108,33 @@
         text-align: center;
     }
 
-    .img {
-        margin-top: 2rem;
+     .container {
+        flex-direction: column;
+        padding: 1rem;
     }
 
     .img img {
         width: auto;
         height: auto;
+        max-width: 100%;
+    }
+
+    .name span{
+        animation: slide-from-left 6s infinite;
     }
 
     .name span:nth-of-type(2) {
         font-size: 2rem;
         color: var(--blue);
+        animation: slide-from-left 6s infinite;
     }
     .name span:nth-of-type(3) {
         font-size: 1.2rem;
+        animation: slide-from-left 6s infinite;
     }
 
     .name {
         text-align: center;
-    }
-
-    .name span,
-    .img {
-        animation: none; /* Disable animation on mobile */
-    }
-}
-
-/* Additional styles to ensure proper alignment and responsiveness on mobile */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .name {
         width: 100%;
         font-size: 1rem;
     }
@@ -149,10 +142,7 @@
     .img {
         width: 100%;
         margin-top: 1rem;
-    }
-
-    .img img {
-        max-width: 100%;
-        height: auto;
+        animation: slide-from-right 6s infinite;
+        margin-top: 2rem;
     }
 }
