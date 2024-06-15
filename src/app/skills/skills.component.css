@@ -47,3 +47,32 @@ body {
   border: 5px solid #6cecec;
   box-shadow: 0 0 10px #222;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .row {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 200px; /* Maximum width for cards */
+    height: auto; /* Let height adjust based on content */
+    padding: 1rem; /* Adjust padding */
+    margin-bottom: 1rem; /* Space between cards */
+  }
+
+  .card-img {
+    width: 50px; /* Adjust image size for smaller screens */
+    height: 50px;
+  }
+
+  .card-text {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
