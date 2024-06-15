@@ -58,7 +58,7 @@ body {
   }
 
   .row, .c1 {
-    flex-direction: column; /* Stack cards vertically on smaller screens */
+   /* flex-direction: column;  Stack cards vertically on smaller screens */
     align-items: center; /* Center align items */
     align-content: center;
     gap: 2rem; 
