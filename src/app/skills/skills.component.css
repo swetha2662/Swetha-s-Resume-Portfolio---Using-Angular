@@ -63,9 +63,9 @@ body {
   .card {
     width: 125px; /* Adjust width for smaller screens */
     height: 125px; /* Adjust height for smaller screens */
-    border-radius: 25%; /* Keep circular shape */
-    padding: 1rem; /* Adjust padding */
-    margin-bottom: 1rem; /* Space between cards */
+    border-radius: 50%; /* Keep circular shape */
+    padding: 0.5rem; /* Adjust padding */
+    margin-bottom: 0/5rem; /* Space between cards */
   }
 
   .card-img {
