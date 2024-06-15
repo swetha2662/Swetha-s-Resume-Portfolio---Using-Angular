@@ -23,8 +23,8 @@
     font-size: 1.5rem;
     padding: 10px 0;
     text-shadow: 10px 8px 10px var(--black);
-    margin-bottom: 0;
-    animation: slide-from-left 6s infinite;
+    margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Apply animation to all spans */
 }
 
 .name span:nth-of-type(1) span {
@@ -35,32 +35,31 @@
 .name span:nth-of-type(2){
     display: inline-block;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Adjusted for better fitting */
     padding: 10px 0;
     text-shadow: 10px 8px 10px var(--black);
-    margin-bottom: 0;
-    animation: slide-from-left 6s infinite;
+    margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Animation added */
 }
-
 .name span:nth-of-type(3) {
     display: inline-block;
     color: white;
     font-size: 1.5rem;
     padding: 10px 0;
     text-shadow: 10px 8px 10px var(--black);
-    margin-bottom: 0;
-    animation: slide-from-left 6s infinite;
+    margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Animation added */
 }
 
 /* Image styling */
 .img {
     text-align: center;
-    animation: slide-from-right 6s infinite;
+    animation: slide-from-right 6s infinite; /* Animation added */
 }
 
 .img img {
     max-width: 100%;
-    width: 300px;
+    width: 300px; /* Adjust this size as needed */
     height: auto;
 }
 
@@ -112,21 +111,12 @@
     }
 
     .img img {
-        width: 100%;
+        width: 200px; /* Adjust for smaller screens */
         height: auto;
     }
 
     .name span:nth-of-type(2),
     .name span:nth-of-type(3) {
-        font-size: 1.2rem;
-    }
-
-    .name {
-        text-align: center;
-    }
-
-    .name span,
-    .img {
-        animation: none; /* Disable animation on mobile */
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
     }
 }
