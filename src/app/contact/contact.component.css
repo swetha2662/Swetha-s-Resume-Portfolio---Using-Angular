@@ -1,6 +1,7 @@
 :host {
     display: block;
     color: white;
+    padding: 2rem 2rem;
 }
 
 ul {
@@ -40,7 +41,7 @@ ul {
 
 :host.pc .social-media,
 :host.pc .contact-info {
-    width: auto;
+    width: 200px;
 }
 
 :host.pc .social-media {
