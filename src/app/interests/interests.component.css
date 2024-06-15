@@ -6,8 +6,8 @@
 }
 
 section {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    padding: 18px;
+    display:flex;
 }
 
 .list1 li{
