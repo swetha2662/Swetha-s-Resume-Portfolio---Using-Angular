@@ -61,19 +61,19 @@ body {
   }
 
   .card {
-    width: 150px; /* Adjust width for smaller screens */
-    height: 150px; /* Adjust height for smaller screens */
-    border-radius: 50%; /* Keep circular shape */
+    width: 125px; /* Adjust width for smaller screens */
+    height: 125px; /* Adjust height for smaller screens */
+    border-radius: 25%; /* Keep circular shape */
     padding: 1rem; /* Adjust padding */
     margin-bottom: 1rem; /* Space between cards */
   }
 
   .card-img {
-    width: 50px; /* Adjust image size for smaller screens */
-    height: 50px;
+    width: 25px; /* Adjust image size for smaller screens */
+    height: 25px;
   }
 
   .card-text {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 0.5rem; /* Adjust text size */
   }
 }
