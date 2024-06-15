@@ -41,7 +41,7 @@ ul {
 
 :host.pc .social-media,
 :host.pc .contact-info {
-    width: 200px;
+    width: auto;
 }
 
 :host.pc .social-media {
