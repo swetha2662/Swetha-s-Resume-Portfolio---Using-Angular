@@ -56,7 +56,7 @@ body {
   }
 
   .row {
-    flex-direction: column; /* Stack cards vertically on smaller screens */
+    flex-direction: row; /* Stack cards vertically on smaller screens */
     align-items: center; /* Center align items */
   }
 
@@ -65,15 +65,15 @@ body {
     height: 125px; /* Adjust height for smaller screens */
     border-radius: 50%; /* Keep circular shape */
     padding: 0.5rem; /* Adjust padding */
-    margin-bottom: 0/5rem; /* Space between cards */
+    margin-bottom: 0.5rem; /* Space between cards */
   }
 
   .card-img {
-    width: 25px; /* Adjust image size for smaller screens */
-    height: 25px;
+    width: 50px; /* Adjust image size for smaller screens */
+    height: 50px;
   }
 
   .card-text {
-    font-size: 0.5rem; /* Adjust text size */
+    font-size: 0.75rem; /* Adjust text size */
   }
 }
