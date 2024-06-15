@@ -52,7 +52,7 @@ body {
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
   body {
-    padding: 0.5rem; /* Adjust padding for smaller screens */
+    padding: 2rem; /* Adjust padding for smaller screens */
     align-items: center; /* Center align items */
     align-content: center;
   }
@@ -64,11 +64,11 @@ body {
   }
 
   .card {
-    width: 125px; /* Adjust width for smaller screens */
-    height: 125px; /* Adjust height for smaller screens */
+    width: 150px; /* Adjust width for smaller screens */
+    height: 150px; /* Adjust height for smaller screens */
     border-radius: 50%; /* Keep circular shape */
-    padding: 0.5rem; /* Adjust padding */
-    margin-bottom: 0.5rem; /* Space between cards */
+    padding: 1rem; /* Adjust padding */
+    margin-bottom: 1rem; /* Space between cards */
   }
 
   .card-img {
@@ -77,6 +77,6 @@ body {
   }
 
   .card-text {
-    font-size: 0.75rem; /* Adjust text size */
+    font-size: 1rem; /* Adjust text size */
   }
 }
