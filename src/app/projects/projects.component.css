@@ -1,4 +1,85 @@
 :root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%);
+}
+
+body {
+  background: #111;
+  color: #fff; /* Set default text color to white */
+  font-family: Arial, sans-serif; /* Example font family */
+}
+
+.container {
+  padding-top: 4rem; /* Add padding instead of margin to the container */
+}
+
+.card {
+  background: #222;
+  border: 1px solid #fdfafb;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  padding: 1.5rem; /* Add padding inside the card body */
+}
+
+.btn {
+  background: var(--gradient);
+  border: 5px solid rgb(172, 218, 230);
+  color: rgb(172, 218, 230);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Adjust padding for better button appearance */
+}
+
+.btn:hover, .btn:focus {
+  background: var(--gradient);
+  color: #000;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  max-height: 200px; /* Limit image height to prevent overflow */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem; /* Adjust spacing below title */
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem; /* Adjust spacing below subtitle */
+}
+
+.card-text {
+  color: #ccc;
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+}
+
+.row {
+  margin: 2rem; /* Reduce top margin for better alignment */
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto; /* Center cards on larger screens */
+  }
+}
+
+
+
+/* :root {
     --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%);
   }
   
@@ -37,4 +118,4 @@
     box-shadow: #222 1px 0 10px;
     text-decoration: none;
     background-color: aliceblue;
-  }
+  } */

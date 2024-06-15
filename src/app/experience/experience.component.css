@@ -1,0 +1,19 @@
+:root {
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%);
+  }
+  
+  body {
+    background: #111;
+  }
+  
+  #row1{
+    padding: 5%;
+    padding-bottom: 15px;
+  }
+  .card {
+    background: #222;
+    border: 1px solid #fdfafb;
+    color: rgba(250, 250, 250, 0.8);   
+    margin-bottom: 2rem; 
+  }
+

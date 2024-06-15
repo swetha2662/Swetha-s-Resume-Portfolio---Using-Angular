@@ -1,10 +1,13 @@
 <div class="container" id="edu">
     <h1>Education</h1>
-
-    <section *ngFor="let education of educationList">
-        <h4>{{education.course}}</h4>
-        <h5>{{education.institute}}</h5>
-        <h6>{{education.duration}}</h6>
-        <span class="score1">{{education.score}}</span>
-    </section>
+    <div class="timeline">
+        <section *ngFor="let education of educationList" class="timeline-entry">
+            <div class="content">
+                <h4>{{education.course}}</h4>
+                <h5>{{education.institute}}</h5>
+                <h6>{{education.duration}}</h6>
+                <span class="score1">{{education.score}}</span>
+            </div>
+        </section>
+    </div>
 </div>

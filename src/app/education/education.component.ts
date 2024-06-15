@@ -12,7 +12,7 @@ export class EducationComponent implements OnInit {
       institute: "Coimbatore Institute of Technology",
       course: 'M.Sc. Software Systems',
       duration: '2020 - 2025',
-      score: 'CGPA : 9.10',
+      score: 'CGPA : 9.26',
     },
     {
       institute: 'G.D. Matriculation Higher Secondary School',

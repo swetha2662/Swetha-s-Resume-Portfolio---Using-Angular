@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ResponsiveDirective } from './directives/responsive.directive';
 import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ResponsibilitiesComponent } from './responsibilities/responsibilities.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { InterestsComponent } from './interests/interests.component';
     ContactComponent,
     ResponsiveDirective,
     EducationComponent,
-    InterestsComponent
+    InterestsComponent,
+    ExperienceComponent,
+    ResponsibilitiesComponent
   ],
   imports: [
     BrowserModule,

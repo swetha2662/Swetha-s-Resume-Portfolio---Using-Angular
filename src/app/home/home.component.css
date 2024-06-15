@@ -1,29 +1,30 @@
-div{
-    display: inline-block;
+/* General styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 100%;
     overflow: hidden;
-    white-space: nowrap;
-}
-
-div:first-of-type{
-    animation: appear 6s infinite;
-}
-
-div:last-of-type{
-    animation: reveal 6s infinite;
-}
-
-div:last-of-type span{
-    font-size: 33px;
-    color: white;
-    animation: slide 6s infinite;
+    padding: 2rem;
 }
 
 .name {
-    grid-row: 3/4;
-    padding: 2rem;
     color: white;
     font-size: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
+    flex: 1;
+    overflow: hidden;
+}
+
+.name span {
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-shadow: 10px 8px 10px var(--black);
+    margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Apply animation to all spans */
 }
 
 .name span:nth-of-type(1) span {
@@ -31,64 +32,91 @@ div:last-of-type span{
     color: var(--blue);
 }
 
-.name span:nth-of-type(2) {
+.name span:nth-of-type(2){
     display: inline-block;
-    color: var(--blue);
-    font-size: 3rem;
-    font-weight: bold;
+    color: white;
+    font-size: 2.5rem; /* Adjusted for better fitting */
     padding: 10px 0;
-    letter-spacing: 8px;
     text-shadow: 10px 8px 10px var(--black);
     margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Animation added */
+}
+.name span:nth-of-type(3) {
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-shadow: 10px 8px 10px var(--black);
+    margin-bottom: 0%;
+    animation: slide-from-left 6s infinite; /* Animation added */
 }
 
-.img{
-    display: inline;
+/* Image styling */
+.img {
+    text-align: center;
+    animation: slide-from-right 6s infinite; /* Animation added */
 }
 
-@keyframes appear{
-    0%{opacity: 0;}
-    20%{opacity: 1;}
-    80%{opacity: 1;}
-    100%{opacity: 0;}
-}
-@keyframes slide{
-    0%{margin-left:-800px;}
-    20%{margin-left:-800px;}
-    35%{margin-left:0px;}
-    100%{margin-left:0px;}
-}
-@keyframes reveal{
-    0%{opacity: 0; width: 0px;}
-    20%{opacity: 1; width: 0px;}
-    30%{width: 655px;}
-    80%{opacity: 1;}
-    100%{opacity: 0; width: 655px;}
+.img img {
+    max-width: 100%;
+    width: 300px; /* Adjust this size as needed */
+    height: auto;
 }
 
+/* Keyframes for text */
+@keyframes slide-from-left {
+    0% { transform: translateX(-100%); }
+    20% { transform: translateX(0); }
+    80% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 
+/* Keyframes for image */
+@keyframes slide-from-right {
+    0% { transform: translateX(100%); }
+    20% { transform: translateX(0); }
+    80% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+/* Host styles */
 :host {
     display: block;
     padding: 4rem 2rem 4rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+    overflow: hidden;
 }
 
 :host.pc {
-    padding: 4rem 2rem 6rem;
+    padding: 4rem 2rem 4rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
 :host.pc .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-:host.pc .name {
-    grid-row: 2/3;
-    width: auto;
-    margin: auto;
-    margin-left: 0;
-    margin-bottom: 0;
-    height: max-content;
-}
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    :host.pc .container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .img {
+        margin-top: 2rem;
+    }
+
+    .img img {
+        width: 200px; /* Adjust for smaller screens */
+        height: auto;
+    }
+
+    .name span:nth-of-type(2),
+    .name span:nth-of-type(3) {
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+}

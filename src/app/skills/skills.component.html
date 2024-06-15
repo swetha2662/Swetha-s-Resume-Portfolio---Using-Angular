@@ -1,102 +1,15 @@
-
-<div class="container mx-auto mt-4" id="skill">
+<div class="skills-container">
+  <div class="container" id="skill">
     <h1>Technical Skills</h1>
+    <div class="c1">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col" *ngFor="let skill of skills">
         <div class="card">
-            <img src="assets/img/c.png" class="card-img" alt="c">
-                <p class="card-text">C</p>   
+          <img [src]="'assets/img/' + skill.icon + '.png'" class="card-img" [alt]="skill.name">
+          <p class="card-text">{{ skill.name }}</p>
         </div>
       </div>
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/cpp.png" class="card-img" alt="cpp">
-
-                <p class="card-text">C++</p>   
-        </div>
-      </div>  
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/python.png" class="card-img" alt="python">
-
-                <p class="card-text">PYTHON</p>   
-        </div> 
-      </div>  
-      <br>
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/java.png" class="card-img" alt="java">
-
-                <p class="card-text">JAVA</p>   
-        </div>
-      </div>  
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/html.png" class="card-img" alt="html">
-
-                <p class="card-text">HTML</p>   
-        </div>
-      </div>  
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/css.png" class="card-img" alt="css">
-
-                <p class="card-text">CSS</p>   
-        </div>
-      </div>  
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/js.png" class="card-img" alt="js">
-
-                <p class="card-text">JAVASCRIPT</p>   
-        </div>
-      </div>  
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/bootstrap.png" class="card-img" alt="bs">
-
-                <p class="card-text">BOOTSTRAP</p>   
-        </div>
-      </div> 
-      <br>
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/angular.png" class="card-img" alt="ang">
-
-                <p class="card-text">ANGULAR</p>
-        </div>
-      </div> 
-      <br>  
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/react.png" class="card-img" alt="react">
-
-                <p class="card-text">REACTJS</p>   
-        </div>
-      </div>    
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/mysql.png" class="card-img" alt="mysql">
-
-                <p class="card-text">MYSQL</p>   
-        </div>
-      </div>  
-      
-      <br> 
-      <div class="col-md-2">
-        <div class="card">
-            <img src="assets/img/php.png" class="card-img" alt="php">
-
-                <p class="card-text">PHP</p>   
-        </div>
-      </div>  
-      
-      <br>
+    </div>
+  </div>
   </div>
 </div>
