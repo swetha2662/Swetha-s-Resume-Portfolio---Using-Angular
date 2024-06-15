@@ -49,6 +49,7 @@ body {
 }
 
 
+/* Media Query for responsiveness */
 @media (max-width: 768px) {
   body {
     padding: 1rem; /* Adjust padding for smaller screens */
@@ -60,9 +61,9 @@ body {
   }
 
   .card {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 200px; /* Maximum width for cards */
-    height: auto; /* Let height adjust based on content */
+    width: 150px; /* Adjust width for smaller screens */
+    height: 150px; /* Adjust height for smaller screens */
+    border-radius: 50%; /* Keep circular shape */
     padding: 1rem; /* Adjust padding */
     margin-bottom: 1rem; /* Space between cards */
   }
